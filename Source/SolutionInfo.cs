@@ -7,7 +7,7 @@ using System.Reflection;
 using System;
 
 [assembly: AssemblyTitle("Cake.ReSharperReports")]
-[assembly: AssemblyDescription("Cake ReSharperReports Addin")]
+[assembly: AssemblyDescription("Cake ReSharperReports AddIn")]
 [assembly: AssemblyCompany("gep13")]
 [assembly: AssemblyProduct("Cake.ReSharperReports")]
 [assembly: AssemblyVersion("0.1.0")]
