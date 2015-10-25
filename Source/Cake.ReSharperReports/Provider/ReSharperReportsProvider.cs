@@ -31,6 +31,16 @@ namespace Cake.ReSharperReports.Provider
         /// </summary>
         /// <param name="inputFilePath">The input file path.</param>
         /// <param name="outputFilePath">The output file path.</param>
+        /// <example>
+        /// <code>
+        /// ReSharperReports.Transform("C:/temp/dupfinder-output.xml", "c:/temp/dupfinder-output.html");
+        /// </code>
+        /// </example>
+        /// <example>
+        /// <code>
+        /// ReSharperReports.Transform("C:/temp/inspectcode-output.xml", "c:/temp/inspectcode-output.html");
+        /// </code>
+        /// </example>
         public void Transform(FilePath inputFilePath, FilePath outputFilePath)
         {
             if (inputFilePath == null)
@@ -51,7 +61,41 @@ namespace Cake.ReSharperReports.Provider
         /// </summary>
         /// <param name="inputFilePath">The input file path.</param>
         /// <param name="outputFilePath">The output file path.</param>
-        /// /// <param name="settings">The settings.</param>
+        /// <param name="settings">The settings.</param>
+        /// <example>
+        /// <code>
+        /// ReSharperReports.Transform("C:/temp/dupfinder-output.xml", "c:/temp/dupfinder-output-xsl.html", new ReSharperReportsSettings()
+        /// {
+        ///     XslFilePath = "c:/temp/dupfinder.xsl"
+        /// });
+        /// </code>
+        /// </example>
+        /// <example>
+        /// <code>
+        /// ReSharperReports.Transform("C:/temp/inspectcode-output.xml", "c:/temp/inspectcode-output-xsl.html", new ReSharperReportsSettings()
+        /// {
+        ///     XslFilePath = "c:/temp/inspectcode.xsl"
+        /// });
+        /// </code>
+        /// </example>
+        /// <example>
+        /// <code>
+        /// ReSharperReports.Transform("C:/temp/dupfinder-output.xml", "c:/temp/dupfinder-output-xsl.html", new ReSharperReportsSettings()
+        /// {
+        ///     XslFilePath = "c:/temp/dupfinder.xsl",
+        ///     LogFilePath = "c:/temp/resharperreports-dupfinder.log"
+        /// });
+        /// </code>
+        /// </example>
+        /// <example>
+        /// <code>
+        /// ReSharperReports.Transform("C:/temp/inspectcode-output.xml", "c:/temp/inspectcode-output-xsl.html", new ReSharperReportsSettings()
+        /// {
+        ///     XslFilePath = "c:/temp/inspectcode.xsl",
+        ///     LogFilePath = "c:/temp/resharperreports-inspectcode.log"
+        /// });
+        /// </code>
+        /// </example>
         public void Transform(FilePath inputFilePath, FilePath outputFilePath, ReSharperReportsSettings settings)
         {
             if (inputFilePath == null)
