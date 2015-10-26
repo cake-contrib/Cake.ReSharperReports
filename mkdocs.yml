@@ -1,0 +1,7 @@
+site_name: Cake.ReSharperReports
+theme: readthedocs
+repo_url: https://github.com/gep13/Cake.ReSharperReports
+
+pages:
+- Home: index.md
+- Usage: usage.md
