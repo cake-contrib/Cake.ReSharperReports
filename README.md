@@ -27,6 +27,6 @@ Cake.ReSharperReports is an Addin for [Cake](http://cakebuild.net/) which allows
 - [Usage](http://cakeresharperreports.readthedocs.org/en/develop/usage/)
 
 ## Chat Room
-Come join in the conversation about ReSharperReports in our Gitter Chat Room
+Come join in the conversation about Cake.ReSharperReports in our Gitter Chat Room
 
 [![Join the chat at https://gitter.im/gep13/Cake.ReSharperReports](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/gep13/Cake.ReSharperReports?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
