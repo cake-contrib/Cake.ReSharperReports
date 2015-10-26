@@ -18,7 +18,9 @@ Task("RunDupFinder")
 })
 .OnError(exception =>
 {
-    ReSharperReports.Transform(buildArtifacts + "/_ReSharperReports/dupfinder-output.xml", buildArtifacts + "/_ReSharperReports/dupfinder-output.html");
+    ReSharperReports.Transform(
+		buildArtifacts + "/_ReSharperReports/dupfinder-output.xml", 
+		buildArtifacts + "/_ReSharperReports/dupfinder-output.html");
 });
 ```
 
@@ -38,6 +40,8 @@ Task("RunInspectCode")
 })
 .OnError(exception =>
 {
-    ReSharperReports.Transform(buildArtifacts + "/_ReSharperReports/inspectcode-output.xml", buildArtifacts + "/_ReSharperReports/inspectcode-output.html");
+    ReSharperReports.Transform(
+		buildArtifacts + "/_ReSharperReports/inspectcode-output.xml", 
+		buildArtifacts + "/_ReSharperReports/inspectcode-output.html");
 });
 ```
