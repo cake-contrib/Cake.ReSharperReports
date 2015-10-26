@@ -6,7 +6,7 @@ It is envisioned that the generating of HTML reports will only be required when 
 
 ## DupFinder
 
-```
+```csharp
 Task("RunDupFinder")
     .Does(() =>
 {
@@ -26,7 +26,7 @@ Task("RunDupFinder")
 
 ## InspectCode
 
-```
+```csharp
 Task("RunInspectCode")
     .Does(() =>
 {

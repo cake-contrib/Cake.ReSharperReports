@@ -4,5 +4,3 @@ Cake.ReSharperReports is an Addin for [Cake](http://cakebuild.net/) which allows
 
 - [DupFinder](https://confluence.jetbrains.com/display/NETCOM/Introducing+dupFinder)
 - [InspectCode](https://confluence.jetbrains.com/display/NETCOM/Introducing+InspectCode)
-
-into human readable HTML Reports.
