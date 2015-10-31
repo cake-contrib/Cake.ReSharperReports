@@ -8,7 +8,7 @@ namespace Cake.ReSharperReports
     /// <summary>
     /// Contains aliases related to ReSharperReports API
     /// </summary>
-    [CakeAliasCategory("ReSharperReports")]
+    [CakeAliasCategory("ReSharper")]
     public static class ReSharperReportsAliases
     {
         /// <summary>
@@ -16,6 +16,7 @@ namespace Cake.ReSharperReports
         /// </summary>
         /// <param name="context">The context.</param>
         /// <returns>A <see cref="ReSharperReportsProvider"/> instance.</returns>
+        [CakeAliasCategory("Reports")]
         [CakePropertyAlias(Cache = true)]
         [CakeNamespaceImport("Cake.ReSharperReports.Provider")]
         [CakeNamespaceImport("Cake.ReSharperReports.Transform")]
