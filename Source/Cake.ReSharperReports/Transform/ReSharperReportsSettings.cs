@@ -1,18 +1,13 @@
 ﻿using Cake.Core.IO;
+using Cake.Core.Tooling;
 
 namespace Cake.ReSharperReports.Transform
 {
     /// <summary>
     /// Contains settings used by <see cref="ReSharperReportsRunner"/>.
     /// </summary>
-    public sealed class ReSharperReportsSettings
+    public sealed class ReSharperReportsSettings : ToolSettings
     {
-        /// <summary>
-        /// Gets or sets the tool path.
-        /// </summary>
-        /// <value>The tool path.</value>
-        public FilePath ToolPath { get; set; }
-
         /// <summary>
         /// Gets or sets the XSL Transform File path.
         /// </summary>

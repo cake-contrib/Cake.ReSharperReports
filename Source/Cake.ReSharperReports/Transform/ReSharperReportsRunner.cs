@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Cake.Core;
 using Cake.Core.IO;
-using Cake.Core.Utilities;
+using Cake.Core.Tooling;
 
 namespace Cake.ReSharperReports.Transform
 {
@@ -46,7 +46,7 @@ namespace Cake.ReSharperReports.Transform
 
             settings = settings ?? new ReSharperReportsSettings();
 
-            Run(settings, GetArguments(inputFilePath, outputFilePath, settings), settings.ToolPath);
+            Run(settings, GetArguments(inputFilePath, outputFilePath, settings));
         }
 
         /// <summary>
