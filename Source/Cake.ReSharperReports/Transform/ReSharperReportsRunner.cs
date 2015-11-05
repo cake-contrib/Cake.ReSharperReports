@@ -71,6 +71,8 @@ namespace Cake.ReSharperReports.Transform
         {
             var builder = new ProcessArgumentBuilder();
 
+            builder.Append("transform");
+
             builder.Append("-i");
             builder.AppendQuoted(inputFilePath.MakeAbsolute(_environment).FullPath);
 
