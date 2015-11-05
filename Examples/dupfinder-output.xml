@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DuplicatesReport ToolsVersion="103.0">
+  <Statistics>
+    <CodebaseCost>190358</CodebaseCost>
+    <TotalDuplicatesCost>0</TotalDuplicatesCost>
+    <TotalFragmentsCost>0</TotalFragmentsCost>
+  </Statistics>
+  <Duplicates>
+    <Duplicate>
+      <Fragment>
+        <FileName>LangFeatures\CLexer.cs</FileName>
+        <OffsetRange Start="4638" End="4988" />
+        <LineRange Start="158" End="168" />
+      </Fragment>
+      <Fragment>
+        <FileName>LangFeatures\Lexer.cs</FileName>
+        <OffsetRange Start="7340" End="7690" />
+        <LineRange Start="238" End="248" />
+      </Fragment>
+    </Duplicate>
+  </Duplicates>
+</DuplicatesReport>

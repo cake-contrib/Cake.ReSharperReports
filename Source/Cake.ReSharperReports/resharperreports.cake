@@ -2,30 +2,30 @@
 
 try
 {
-	ReSharperReports.Transform("C:/temp/dupfinder-output.xml", "c:/temp/dupfinder-output.html");
+	ReSharperReports.Transform("./../../../../Examples/dupfinder-output.xml", "./../../../../BuildArtifacts/dupfinder-output.html");
 
-	ReSharperReports.Transform("C:/temp/inspectcode-output.xml", "c:/temp/inspectcode-output.html");
+	ReSharperReports.Transform("./../../../../Examples/inspectcode-output.xml", "./../../../../BuildArtifacts/inspectcode-output.html");
 
-	ReSharperReports.Transform("C:/temp/dupfinder-output.xml", "c:/temp/dupfinder-output-xsl.html", new ReSharperReportsSettings()
+	ReSharperReports.Transform("./../../../../Examples/dupfinder-output.xml", "./../../../../BuildArtifacts/dupfinder-output-xsl.html", new ReSharperReportsSettings()
 	{
-		XslFilePath = "c:/temp/dupfinder.xsl"
+		XslFilePath = "./../../../../Examples/dupfinder.xsl"
 	});
 
-	ReSharperReports.Transform("C:/temp/inspectcode-output.xml", "c:/temp/inspectcode-output-xsl.html", new ReSharperReportsSettings()
+	ReSharperReports.Transform("./../../../../Examples/inspectcode-output.xml", "./../../../../BuildArtifacts/inspectcode-output-xsl.html", new ReSharperReportsSettings()
 	{
-		XslFilePath = "c:/temp/inspectcode.xsl"
+		XslFilePath = "./../../../../Examples/inspectcode.xsl"
 	});
 
-	ReSharperReports.Transform("C:/temp/dupfinder-output.xml", "c:/temp/dupfinder-output-xsl-log.html", new ReSharperReportsSettings()
+	ReSharperReports.Transform("./../../../../Examples/dupfinder-output.xml", "./../../../../BuildArtifacts/dupfinder-output-xsl-log.html", new ReSharperReportsSettings()
 	{
-		XslFilePath = "c:/temp/dupfinder.xsl",
-		LogFilePath = "c:/temp/resharperreports-dupfinder.log"
+		XslFilePath = "./../../../../Examples/dupfinder.xsl",
+		LogFilePath = "./../../../../BuildArtifacts/resharperreports-dupfinder.log"
 	});
 
-	ReSharperReports.Transform("C:/temp/inspectcode-output.xml", "c:/temp/inspectcode-output-xsl-log.html", new ReSharperReportsSettings()
+	ReSharperReports.Transform("./../../../../Examples/inspectcode-output.xml", "./../../../../BuildArtifacts/inspectcode-output-xsl-log.html", new ReSharperReportsSettings()
 	{
-		XslFilePath = "c:/temp/inspectcode.xsl",
-		LogFilePath = "c:/temp/resharperreports-inspectcode.log"
+		XslFilePath = "./../../../../Examples/inspectcode.xsl",
+		LogFilePath = "./../../../../BuildArtifacts/resharperreports-inspectcode.log"
 	});
 }
 catch(Exception ex)

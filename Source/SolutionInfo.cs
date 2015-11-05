@@ -10,9 +10,9 @@ using System;
 [assembly: AssemblyDescription("Cake ReSharperReports AddIn")]
 [assembly: AssemblyCompany("gep13")]
 [assembly: AssemblyProduct("Cake.ReSharperReports")]
-[assembly: AssemblyVersion("0.1.0")]
-[assembly: AssemblyFileVersion("0.1.0")]
-[assembly: AssemblyInformationalVersion("0.1.0")]
+[assembly: AssemblyVersion("0.2.0")]
+[assembly: AssemblyFileVersion("0.2.0")]
+[assembly: AssemblyInformationalVersion("0.2.0")]
 [assembly: AssemblyCopyright("Copyright © gep13 2015 - Present")]
 [assembly: CLSCompliant(true)]
 
