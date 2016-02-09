@@ -13,12 +13,14 @@ var isPullRequest       = AppVeyor.Environment.PullRequest.IsPullRequest;
 var isDevelopBranch     = AppVeyor.Environment.Repository.Branch == "develop";
 var isTag               = AppVeyor.Environment.Repository.Tag.IsTag;
 var solution            = "./Source/Cake.ReSharperReports.sln";
-var solutionPath        = "./Source/Cake.ReSharperReports";
-var sourcePath          = "./Source";
-var binDir              = "./Source/Cake.ReSharperReports/bin/" + configuration;
-var buildArtifacts      = "./BuildArtifacts";
-var version             = "0.2.0";
-var semVersion          = "0.2.0";
+var solutionPath        = Directory("./Source/Cake.ReSharperReports");
+var sourcePath          = Directory("./Source");
+var binDir              = Directory("./Source/Cake.ReSharperReports/bin") + Directory(configuration);
+var objDir              = Directory("./Source/Cake.ReSharperReports/obj") + Directory(configuration);
+var buildArtifacts      = Directory("./BuildArtifacts");
+var testResultsDir      = buildArtifacts + Directory("test-results");
+var version             = "0.3.0";
+var semVersion          = "0.3.0";
 
 var assemblyInfo        = new AssemblyInfoSettings {
                                 Title                   = "Cake.ReSharperReports",
@@ -80,8 +82,8 @@ Task("Clean")
     .Does(() =>
 {
     Information("Cleaning {0}", solutionPath);
-    CleanDirectories(solutionPath + "/**/bin/" + configuration);
-    CleanDirectories(solutionPath + "/**/obj/" + configuration);
+    CleanDirectories(binDir);
+    CleanDirectories(objDir);
 
 	Information("Cleaning BuildArtifacts");
 	CleanDirectories(buildArtifacts);
@@ -120,6 +122,17 @@ Task("Build")
             .SetConfiguration(configuration));
 });
 
+Task("Run-Unit-Tests")
+    .IsDependentOn("Build")
+    .Does(() =>
+{
+    XUnit2("./Source/**/bin/" + configuration + "/*.Tests.dll", new XUnit2Settings {
+        OutputDirectory = testResultsDir,
+        XmlReportV1 = true,
+        NoAppDomain = true
+    });
+});
+
 Task("DupFinder")
 	.IsDependentOn("Create-BuildArtifacts-Directory")
     .Does(() =>
@@ -128,7 +141,7 @@ Task("DupFinder")
     DupFinder(solution, new DupFinderSettings() {
       ShowStats = true,
       ShowText = true,
-      OutputFile = buildArtifacts + "/_ReSharperReports/dupfinder.xml",
+      OutputFile = buildArtifacts + File("_ReSharperReports/dupfinder.xml"),
       });
 });
 
@@ -139,8 +152,8 @@ Task("InspectCode")
     // Run ReSharper's InspectCode
     InspectCode(solution, new InspectCodeSettings() {
       SolutionWideAnalysis = true,
-	  Profile = sourcePath + "/Cake.ReSharperReports.sln.DotSettings",
-      OutputFile = buildArtifacts + "/_ReSharperReports/inspectcode.xml",
+	  Profile = sourcePath + File("Cake.ReSharperReports.sln.DotSettings"),
+      OutputFile = buildArtifacts + File("_ReSharperReports/inspectcode.xml"),
       });
 });
 
@@ -151,10 +164,15 @@ Task("Create-BuildArtifacts-Directory")
     {
         CreateDirectory(buildArtifacts);
     }
+
+    if (!DirectoryExists(testResultsDir))
+    {
+        CreateDirectory(testResultsDir);
+    }
 });
 
 Task("Create-NuGet-Package")
-    .IsDependentOn("Build")
+    .IsDependentOn("Run-Unit-Tests")
 	.IsDependentOn("Create-BuildArtifacts-Directory")
     .Does(() =>
 {
@@ -197,7 +215,7 @@ Task("Publish-Nuget-Package")
     }
 
     // Get the path to the package.
-    var package = buildArtifacts + "/Cake.ReSharperReports." + semVersion + ".nupkg";
+    var package = buildArtifacts + File("/Cake.ReSharperReports." + semVersion + ".nupkg");
 
     // Push the package.
     NuGetPush(package, new NuGetPushSettings {
