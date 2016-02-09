@@ -19,8 +19,8 @@ var binDir              = Directory("./Source/Cake.ReSharperReports/bin") + Dire
 var objDir              = Directory("./Source/Cake.ReSharperReports/obj") + Directory(configuration);
 var buildArtifacts      = Directory("./BuildArtifacts");
 var testResultsDir      = buildArtifacts + Directory("test-results");
-var version             = "0.3.0";
-var semVersion          = "0.3.0";
+var version             = "0.3.1";
+var semVersion          = "0.3.1";
 
 var assemblyInfo        = new AssemblyInfoSettings {
                                 Title                   = "Cake.ReSharperReports",
