@@ -215,7 +215,7 @@ Task("Publish-Nuget-Package")
     }
 
     // Get the path to the package.
-    var package = buildArtifacts + File("/Cake.ReSharperReports." + semVersion + ".nupkg");
+    var package = buildArtifacts + File("./Cake.ReSharperReports." + semVersion + ".nupkg");
 
     // Push the package.
     NuGetPush(package, new NuGetPushSettings {
