@@ -4,7 +4,7 @@ using Cake.Core;
 using Cake.Core.IO;
 using Cake.Core.Tooling;
 
-namespace Cake.ReSharperReports.Transform
+namespace Cake.ReSharperReports
 {
     /// <summary>
     /// The ReSharperReports runner.
@@ -32,7 +32,7 @@ namespace Cake.ReSharperReports.Transform
         /// <param name="inputFilePath">The input filepath.</param>
         /// <param name="outputFilePath">The output file path.</param>
         /// <param name="settings">The settings.</param>
-        public void Transform(FilePath inputFilePath, FilePath outputFilePath, ReSharperReportsSettings settings)
+        public void Run(FilePath inputFilePath, FilePath outputFilePath, ReSharperReportsSettings settings)
         {
             if (inputFilePath == null)
             {

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cake.ReSharperReports", "Cake.ReSharperReports\Cake.ReSharperReports.csproj", "{59AFD6AA-B404-47C4-8BF4-507B87B6158E}"
 EndProject
@@ -22,6 +22,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{C08A970B
 		..\Tools\packages.config = ..\Tools\packages.config
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cake.ReSharperReports.Tests", "Cake.ReSharperReports.Tests\Cake.ReSharperReports.Tests.csproj", "{78EB146D-2178-47FE-B999-1FECF1F3407B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{59AFD6AA-B404-47C4-8BF4-507B87B6158E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59AFD6AA-B404-47C4-8BF4-507B87B6158E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59AFD6AA-B404-47C4-8BF4-507B87B6158E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78EB146D-2178-47FE-B999-1FECF1F3407B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78EB146D-2178-47FE-B999-1FECF1F3407B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78EB146D-2178-47FE-B999-1FECF1F3407B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78EB146D-2178-47FE-B999-1FECF1F3407B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,7 +1,7 @@
 ﻿using System;
 using Cake.Core;
 using Cake.Core.Annotations;
-using Cake.ReSharperReports.Provider;
+using Cake.Core.IO;
 
 namespace Cake.ReSharperReports
 {
@@ -12,22 +12,88 @@ namespace Cake.ReSharperReports
     public static class ReSharperReportsAliases
     {
         /// <summary>
-        /// Gets a <see cref="ReSharperReportsProvider"/> instance that can be used to transform ReSharper XML Reports into human readable version
+        /// Runs ReSharperReports against the specified input FilePath, and outputs to specified output FilePath
         /// </summary>
         /// <param name="context">The context.</param>
-        /// <returns>A <see cref="ReSharperReportsProvider"/> instance.</returns>
-        [CakeAliasCategory("Reports")]
-        [CakePropertyAlias(Cache = true)]
-        [CakeNamespaceImport("Cake.ReSharperReports.Provider")]
-        [CakeNamespaceImport("Cake.ReSharperReports.Transform")]
-        public static ReSharperReportsProvider ReSharperReports(this ICakeContext context)
+        /// <param name="inputFilePath">The input file path.</param>
+        /// <param name="outputFilePath">The output file path.</param>
+        /// <example>
+        /// <code>
+        /// ReSharperReports("C:/temp/dupfinder-output.xml", "c:/temp/dupfinder-output.html");
+        /// </code>
+        /// </example>
+        /// <example>
+        /// <code>
+        /// ReSharperReports("C:/temp/inspectcode-output.xml", "c:/temp/inspectcode-output.html");
+        /// </code>
+        /// </example>
+        [CakeMethodAlias]
+        public static void ReSharperReports(this ICakeContext context, FilePath inputFilePath, FilePath outputFilePath)
+        {
+            ReSharperReports(context, inputFilePath, outputFilePath, new ReSharperReportsSettings());
+        }
+
+        /// <summary>
+        /// Runs ReSharperReports against the specified input FilePath, and outputs to specified output FilePath with the specified ReSharperReportsSettings
+        /// </summary>
+        /// <param name="context">The context.</param>
+        /// <param name="inputFilePath">The input file path.</param>
+        /// <param name="outputFilePath">The output file path.</param>
+        /// <param name="settings">The settings.</param>
+        /// <example>
+        /// <code>
+        /// ReSharperReports("C:/temp/dupfinder-output.xml", "c:/temp/dupfinder-output-xsl.html", new ReSharperReportsSettings()
+        /// {
+        ///     XslFilePath = "c:/temp/dupfinder.xsl"
+        /// });
+        /// </code>
+        /// </example>
+        /// <example>
+        /// <code>
+        /// ReSharperReports("C:/temp/inspectcode-output.xml", "c:/temp/inspectcode-output-xsl.html", new ReSharperReportsSettings()
+        /// {
+        ///     XslFilePath = "c:/temp/inspectcode.xsl"
+        /// });
+        /// </code>
+        /// </example>
+        /// <example>
+        /// <code>
+        /// ReSharperReports("C:/temp/dupfinder-output.xml", "c:/temp/dupfinder-output-xsl.html", new ReSharperReportsSettings()
+        /// {
+        ///     XslFilePath = "c:/temp/dupfinder.xsl",
+        ///     LogFilePath = "c:/temp/resharperreports-dupfinder.log"
+        /// });
+        /// </code>
+        /// </example>
+        /// <example>
+        /// <code>
+        /// ReSharperReports("C:/temp/inspectcode-output.xml", "c:/temp/inspectcode-output-xsl.html", new ReSharperReportsSettings()
+        /// {
+        ///     XslFilePath = "c:/temp/inspectcode.xsl",
+        ///     LogFilePath = "c:/temp/resharperreports-inspectcode.log"
+        /// });
+        /// </code>
+        /// </example>
+        [CakeMethodAlias]
+        public static void ReSharperReports(this ICakeContext context, FilePath inputFilePath, FilePath outputFilePath, ReSharperReportsSettings settings)
         {
             if (context == null)
             {
-                throw new ArgumentNullException(nameof(context));
+                throw new ArgumentNullException("context");
             }
 
-            return new ReSharperReportsProvider(context);
+            if (inputFilePath == null)
+            {
+                throw new ArgumentNullException("inputFilePath");
+            }
+
+            if (outputFilePath == null)
+            {
+                throw new ArgumentNullException("outputFilePath");
+            }
+
+            var runner = new ReSharperReportsRunner(context.FileSystem, context.Environment, context.Globber, context.ProcessRunner);
+            runner.Run(inputFilePath, outputFilePath, settings);
         }
     }
 }

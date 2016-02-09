@@ -1,7 +1,7 @@
 ﻿using Cake.Core.IO;
 using Cake.Core.Tooling;
 
-namespace Cake.ReSharperReports.Transform
+namespace Cake.ReSharperReports
 {
     /// <summary>
     /// Contains settings used by <see cref="ReSharperReportsRunner"/>.
