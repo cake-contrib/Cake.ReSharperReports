@@ -19,8 +19,8 @@ var binDir              = Directory("./Source/Cake.ReSharperReports/bin") + Dire
 var objDir              = Directory("./Source/Cake.ReSharperReports/obj") + Directory(configuration);
 var buildArtifacts      = Directory("./BuildArtifacts");
 var testResultsDir      = buildArtifacts + Directory("test-results");
-var version             = "0.3.0";
-var semVersion          = "0.3.0";
+var version             = "0.3.1";
+var semVersion          = "0.3.1";
 
 var assemblyInfo        = new AssemblyInfoSettings {
                                 Title                   = "Cake.ReSharperReports",
@@ -215,7 +215,7 @@ Task("Publish-Nuget-Package")
     }
 
     // Get the path to the package.
-    var package = buildArtifacts + File("/Cake.ReSharperReports." + semVersion + ".nupkg");
+    var package = buildArtifacts + File("./Cake.ReSharperReports." + semVersion + ".nupkg");
 
     // Push the package.
     NuGetPush(package, new NuGetPushSettings {
