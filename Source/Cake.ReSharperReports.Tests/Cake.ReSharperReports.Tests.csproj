@@ -69,9 +69,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReSharperReportsRunnerFixture.cs" />
+    <Compile Include="ReSharperReportsRunnerTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cake.ReSharperReports\Cake.ReSharperReports.csproj">
+      <Project>{59afd6aa-b404-47c4-8bf4-507b87b6158e}</Project>
+      <Name>Cake.ReSharperReports</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
