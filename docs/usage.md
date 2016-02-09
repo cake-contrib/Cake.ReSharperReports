@@ -18,7 +18,7 @@ Task("RunDupFinder")
 })
 .OnError(exception =>
 {
-    ReSharperReports.Transform(
+    ReSharperReports(
 		buildArtifacts + "/_ReSharperReports/dupfinder-output.xml", 
 		buildArtifacts + "/_ReSharperReports/dupfinder-output.html");
 });
@@ -40,7 +40,7 @@ Task("RunInspectCode")
 })
 .OnError(exception =>
 {
-    ReSharperReports.Transform(
+    ReSharperReports(
 		buildArtifacts + "/_ReSharperReports/inspectcode-output.xml", 
 		buildArtifacts + "/_ReSharperReports/inspectcode-output.html");
 });
