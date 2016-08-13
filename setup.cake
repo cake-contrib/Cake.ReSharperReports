@@ -38,8 +38,6 @@ var title                     = "Cake.ReSharperReports";
 var resharperSettingsFileName = "Cake.ReSharperReports.sln.DotSettings";
 var repositoryOwner           = "gep13";
 var repositoryName            = "Cake.ReSharperReports";
-
-// NOTE: Only populate this, if required, but leave as is otherwise.
 var dupFinderExcludePattern   = new string[] { rootDirectoryPath + "/Source/Cake.ReSharperReports.Tests/*.cs" };
 
 ///////////////////////////////////////////////////////////////////////////////
