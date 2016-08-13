@@ -139,7 +139,7 @@ namespace Cake.ReSharperReports.Tests
 
                 // Then
                 Assert.IsType<CakeException>(result);
-                Assert.Equal("ReSharperReports: Process returned an error.", result.Message);
+                Assert.Equal("ReSharperReports: Process returned an error (exit code 1).", result.Message);
             }
 
             [Fact]

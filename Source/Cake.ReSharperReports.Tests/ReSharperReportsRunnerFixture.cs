@@ -23,7 +23,7 @@ namespace Cake.ReSharperReports.Tests
 
         protected override void RunTool()
         {
-            var tool = new ReSharperReportsRunner(FileSystem, Environment, Globber, ProcessRunner);
+            var tool = new ReSharperReportsRunner(FileSystem, Environment, ProcessRunner, Tools);
             tool.Run(InputFilePath, OutputFilePath, Settings);
         }
     }
