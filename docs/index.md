@@ -4,3 +4,8 @@ Cake.ReSharperReports is an Addin for [Cake](http://cakebuild.net/) which allows
 
 - [DupFinder](https://confluence.jetbrains.com/display/NETCOM/Introducing+dupFinder)
 - [InspectCode](https://confluence.jetbrains.com/display/NETCOM/Introducing+InspectCode)
+
+
+To use this addin, you require the following directive in your .cake script:
+
+`#Tool "JetBrains.ReSharper.CommandLineTools"`

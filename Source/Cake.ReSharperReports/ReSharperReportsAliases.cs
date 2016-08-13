@@ -92,7 +92,7 @@ namespace Cake.ReSharperReports
                 throw new ArgumentNullException("outputFilePath");
             }
 
-            var runner = new ReSharperReportsRunner(context.FileSystem, context.Environment, context.Globber, context.ProcessRunner);
+            var runner = new ReSharperReportsRunner(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
             runner.Run(inputFilePath, outputFilePath, settings);
         }
     }
