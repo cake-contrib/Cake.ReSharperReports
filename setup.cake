@@ -36,7 +36,7 @@ var solutionFilePath          = "./Source/Cake.ReSharperReports.sln";
 var solutionDirectoryPath     = "./Source/Cake.ReSharperReports";
 var title                     = "Cake.ReSharperReports";
 var resharperSettingsFileName = "Cake.ReSharperReports.sln.DotSettings";
-var repositoryOwner           = "cake-build";
+var repositoryOwner           = "cake-contrib";
 var repositoryName            = "Cake.ReSharperReports";
 var dupFinderExcludePattern   = new string[] { rootDirectoryPath + "/Source/Cake.ReSharperReports.Tests/*.cs" };
 
