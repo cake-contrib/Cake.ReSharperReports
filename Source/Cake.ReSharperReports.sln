@@ -1,15 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cake.ReSharperReports", "Cake.ReSharperReports\Cake.ReSharperReports.csproj", "{59AFD6AA-B404-47C4-8BF4-507B87B6158E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildScripts", "BuildScripts", "{8B494EF7-BE5D-49A5-AEA7-BFA8C704102A}"
 	ProjectSection(SolutionItems) = preProject
-		..\build.bat = ..\build.bat
-		..\build.cake = ..\build.cake
 		..\build.ps1 = ..\build.ps1
+		..\setup.cake = ..\setup.cake
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppVeyor", "AppVeyor", "{1149F424-917D-4F55-87F8-22EF4891A4CF}"
