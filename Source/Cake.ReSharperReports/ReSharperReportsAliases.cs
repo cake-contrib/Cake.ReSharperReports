@@ -6,9 +6,19 @@ using Cake.Core.IO;
 namespace Cake.ReSharperReports
 {
     /// <summary>
-    /// Contains aliases related to ReSharperReports API
+    /// <para>Contains functionality related to the <see href="https://github.com/gep13/ReSharperReports">ReSharperReports</see> tool.</para>
+    /// <para>
+    /// In order to use the commands for this addin, you will need to include the following in your build.cake file to download and reference from NuGet.org:
+    /// <code>
+    /// #tool ReSharperReports
+    /// </code>
+    /// In addition, you will need to include the following:
+    /// <code>
+    /// #addin Cake.ReSharperReports
+    /// </code>
+    /// </para>
     /// </summary>
-    [CakeAliasCategory("ReSharper")]
+    [CakeAliasCategory("ReSharperReports")]
     public static class ReSharperReportsAliases
     {
         /// <summary>
