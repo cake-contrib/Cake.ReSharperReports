@@ -23,7 +23,7 @@ Cake.ReSharperReports is an Addin for [Cake](http://cakebuild.net/) which allows
 
 ## Code Coverage
 
-[![Coverage Status](https://coveralls.io/repos/github/cake-contrib/Cake.ReSharperReports/badge.svg)](https://coveralls.io/github/cake-contrib/Cake.ReSharperReports)
+[![Coverage Status](https://coveralls.io/repos/github/cake-contrib/Cake.ReSharperReports/badge.svg?branch=develop)](https://coveralls.io/github/cake-contrib/Cake.ReSharperReports?branch=develop)
 
 ## Quick Links
 
