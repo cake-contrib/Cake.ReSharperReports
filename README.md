@@ -21,6 +21,10 @@ Cake.ReSharperReports is an Addin for [Cake](http://cakebuild.net/) which allows
 |:--:|:--:|
 |[![Build status](https://ci.appveyor.com/api/projects/status/jqo5abjlr9sqt4uh/branch/develop?svg=true)](https://ci.appveyor.com/project/cakecontrib/cake-resharperreports/branch/develop)|[![Build status](https://ci.appveyor.com/api/projects/status/jqo5abjlr9sqt4uh/branch/develop?svg=true)](https://ci.appveyor.com/project/cakecontrib/cake-resharperreports/branch/master)|
 
+## Code Coverage
+
+[![Coverage Status](https://coveralls.io/repos/github/cake-contrib/Cake.ReSharperReports/badge.svg)](https://coveralls.io/github/cake-contrib/Cake.ReSharperReports)
+
 ## Quick Links
 
 - [Documentation](http://cakeresharperreports.readthedocs.org/en/develop/)
