@@ -6,6 +6,16 @@ Cake.ReSharperReports is an Addin for [Cake](http://cakebuild.net/) which allows
 - [InspectCode](https://confluence.jetbrains.com/display/NETCOM/Introducing+InspectCode)
 
 
-To use this addin, you require the following directive in your .cake script:
+To use this addin, you require the following directives in your .cake script:
 
-`#Tool "JetBrains.ReSharper.CommandLineTools"`
+```csharp
+#tool "JetBrains.ReSharper.CommandLineTools"
+```
+
+```csharp
+#tool "ReSharperReports"
+```
+ 
+```csharp
+#addin "Cake.ReSharperReports"
+```
