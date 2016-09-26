@@ -1,6 +1,6 @@
 site_name: Cake.ReSharperReports
 theme: readthedocs
-repo_url: https://github.com/gep13/Cake.ReSharperReports
+repo_url: https://github.com/cake-contrib/Cake.ReSharperReports
 
 pages:
 - Home: index.md
