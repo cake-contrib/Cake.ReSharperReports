@@ -42,6 +42,7 @@ var repositoryOwner           = "cake-contrib";
 var repositoryName            = "Cake.ReSharperReports";
 var appVeyorAccountName       = "cakecontrib";
 var appVeyorProjectSlug       = "cake-resharperreports";
+
 var dupFinderExcludePattern   = new string[] { rootDirectoryPath + "/Source/Cake.ReSharperReports.Tests/*.cs" };
 
 ///////////////////////////////////////////////////////////////////////////////

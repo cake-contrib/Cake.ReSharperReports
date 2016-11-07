@@ -10,12 +10,12 @@
     <licenseUrl>https://github.com/cake-contrib/Cake.ReSharperReports/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/cake-contrib/Cake.ReSharperReports/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <copyright>Copyright (c) gep13</copyright>
+    <copyright>Copyright (c) Cake Contributions 2016 - Present</copyright>
     <tags>Cake, Script, Build, ReSharperReports</tags>
   </metadata>
   <files>
-    <file src="Cake.ReSharperReports.dll" />
-    <file src="Cake.ReSharperReports.pdb" />
-    <file src="Cake.ReSharperReports.xml" />
+    <file src="Cake.ReSharperReports.dll" target="lib\net45" />
+    <file src="Cake.ReSharperReports.pdb" target="lib\net45" />
+    <file src="Cake.ReSharperReports.xml" target="lib\net45" />
   </files>
 </package>
