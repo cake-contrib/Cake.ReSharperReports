@@ -36,6 +36,7 @@ var sendMessageToTwitter = true;
 var rootDirectoryPath         = MakeAbsolute(Context.Environment.WorkingDirectory);
 var solutionFilePath          = "./Source/Cake.ReSharperReports.sln";
 var solutionDirectoryPath     = "./Source/Cake.ReSharperReports";
+var sourceDirectoryPath       = "./Source";
 var title                     = "Cake.ReSharperReports";
 var resharperSettingsFileName = "Cake.ReSharperReports.sln.DotSettings";
 var repositoryOwner           = "cake-contrib";
@@ -44,6 +45,9 @@ var appVeyorAccountName       = "cakecontrib";
 var appVeyorProjectSlug       = "cake-resharperreports";
 
 var dupFinderExcludePattern   = new string[] { rootDirectoryPath + "/Source/Cake.ReSharperReports.Tests/*.cs" };
+var testCoverageFilter = "+[*]* -[xunit.*]* -[Cake.Core]* -[Cake.Testing]* -[*.Tests]* ";
+var testCoverageExcludeByAttribute = "*.ExcludeFromCodeCoverage*";
+var testCoverageExcludeByFile = "*/*Designer.cs;*/*.g.cs;*/*.g.i.cs";
 
 ///////////////////////////////////////////////////////////////////////////////
 // CAKE FILES TO LOAD IN
