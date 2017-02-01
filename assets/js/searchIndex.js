@@ -34,8 +34,8 @@ var searchModule = function() {
 
     a({
         id:0,
-        title:"ReSharperReportsAliases",
-        content:"ReSharperReportsAliases",
+        title:"ReSharperReportsSettings",
+        content:"ReSharperReportsSettings",
         description:'',
         tags:''
     });
@@ -50,15 +50,15 @@ var searchModule = function() {
 
     a({
         id:2,
-        title:"ReSharperReportsSettings",
-        content:"ReSharperReportsSettings",
+        title:"ReSharperReportsAliases",
+        content:"ReSharperReportsAliases",
         description:'',
         tags:''
     });
 
     y({
-        url:'/Cake.ReSharperReports/Cake.ReSharperReports/api/Cake.ReSharperReports/ReSharperReportsAliases',
-        title:"ReSharperReportsAliases",
+        url:'/Cake.ReSharperReports/Cake.ReSharperReports/api/Cake.ReSharperReports/ReSharperReportsSettings',
+        title:"ReSharperReportsSettings",
         description:""
     });
 
@@ -69,8 +69,8 @@ var searchModule = function() {
     });
 
     y({
-        url:'/Cake.ReSharperReports/Cake.ReSharperReports/api/Cake.ReSharperReports/ReSharperReportsSettings',
-        title:"ReSharperReportsSettings",
+        url:'/Cake.ReSharperReports/Cake.ReSharperReports/api/Cake.ReSharperReports/ReSharperReportsAliases',
+        title:"ReSharperReportsAliases",
         description:""
     });
 
