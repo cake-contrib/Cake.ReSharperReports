@@ -42,16 +42,16 @@ var searchModule = function() {
 
     a({
         id:1,
-        title:"ReSharperReportsSettings",
-        content:"ReSharperReportsSettings",
+        title:"ReSharperReportsRunner",
+        content:"ReSharperReportsRunner",
         description:'',
         tags:''
     });
 
     a({
         id:2,
-        title:"ReSharperReportsRunner",
-        content:"ReSharperReportsRunner",
+        title:"ReSharperReportsSettings",
+        content:"ReSharperReportsSettings",
         description:'',
         tags:''
     });
@@ -63,14 +63,14 @@ var searchModule = function() {
     });
 
     y({
-        url:'/Cake.ReSharperReports/Cake.ReSharperReports/api/Cake.ReSharperReports/ReSharperReportsSettings',
-        title:"ReSharperReportsSettings",
+        url:'/Cake.ReSharperReports/Cake.ReSharperReports/api/Cake.ReSharperReports/ReSharperReportsRunner',
+        title:"ReSharperReportsRunner",
         description:""
     });
 
     y({
-        url:'/Cake.ReSharperReports/Cake.ReSharperReports/api/Cake.ReSharperReports/ReSharperReportsRunner',
-        title:"ReSharperReportsRunner",
+        url:'/Cake.ReSharperReports/Cake.ReSharperReports/api/Cake.ReSharperReports/ReSharperReportsSettings',
+        title:"ReSharperReportsSettings",
         description:""
     });
 
