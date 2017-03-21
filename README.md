@@ -9,7 +9,7 @@ Cake.ReSharperReports is an Addin for [Cake](http://cakebuild.net/) which allows
 
 ## Information
 
-||Stable|Pre-release|
+| |Stable|Pre-release|
 |:--:|:--:|:--:|
 |GitHub Release|-|[![GitHub release](https://img.shields.io/github/release/cake-contrib/Cake.ReSharperReports.svg)](https://github.com/cake-contrib/Cake.ReSharperReports/releases/latest)|
 |NuGet|[![NuGet](https://img.shields.io/nuget/v/Cake.ReSharperReports.svg)](https://www.nuget.org/packages/Cake.ReSharperReports)|[![NuGet](https://img.shields.io/nuget/vpre/Cake.ReSharperReports.svg)](https://www.nuget.org/packages/Cake.ReSharperReports)|
