@@ -42,16 +42,16 @@ var searchModule = function() {
 
     a({
         id:1,
-        title:"ReSharperReportsRunner",
-        content:"ReSharperReportsRunner",
+        title:"ReSharperReportsAliases",
+        content:"ReSharperReportsAliases",
         description:'',
         tags:''
     });
 
     a({
         id:2,
-        title:"ReSharperReportsAliases",
-        content:"ReSharperReportsAliases",
+        title:"ReSharperReportsRunner",
+        content:"ReSharperReportsRunner",
         description:'',
         tags:''
     });
@@ -63,14 +63,14 @@ var searchModule = function() {
     });
 
     y({
-        url:'/Cake.ReSharperReports/Cake.ReSharperReports/api/Cake.ReSharperReports/ReSharperReportsRunner',
-        title:"ReSharperReportsRunner",
+        url:'/Cake.ReSharperReports/Cake.ReSharperReports/api/Cake.ReSharperReports/ReSharperReportsAliases',
+        title:"ReSharperReportsAliases",
         description:""
     });
 
     y({
-        url:'/Cake.ReSharperReports/Cake.ReSharperReports/api/Cake.ReSharperReports/ReSharperReportsAliases',
-        title:"ReSharperReportsAliases",
+        url:'/Cake.ReSharperReports/Cake.ReSharperReports/api/Cake.ReSharperReports/ReSharperReportsRunner',
+        title:"ReSharperReportsRunner",
         description:""
     });
 
