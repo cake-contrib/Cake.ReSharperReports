@@ -15,9 +15,9 @@
     <tags>Cake, Script, Build, ReSharperReports</tags>
   </metadata>
   <files>
-    <file src="net452\Cake.ReSharperReports.dll" target="lib/net45" />
-    <file src="net452\Cake.ReSharperReports.pdb" target="lib/net45" />
-    <file src="net452\Cake.ReSharperReports.xml" target="lib/net45" />
+    <file src="net46\Cake.ReSharperReports.dll" target="lib/net46" />
+    <file src="net46\Cake.ReSharperReports.pdb" target="lib/net46" />
+    <file src="net46\Cake.ReSharperReports.xml" target="lib/net46" />
     <file src="netstandard1.6\Cake.ReSharperReports.dll" target="lib/netstandard1.6" />
     <file src="netstandard1.6\Cake.ReSharperReports.pdb" target="lib/netstandard1.6" />
   </files>
