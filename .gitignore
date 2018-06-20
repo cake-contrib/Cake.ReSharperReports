@@ -198,3 +198,5 @@ FakesAssemblies/
 # Build Related
 tools/
 BuildArtifacts/
+
+.DS_Store
