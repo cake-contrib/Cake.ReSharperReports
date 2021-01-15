@@ -1,19 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
 	<channel>
-		<title />
+		<title>Cake.ReSharperReports</title>
 		<link>http://cake-contrib.github.io/Cake.ReSharperReports</link>
 		<description />
-		<copyright>2017</copyright>
-		<pubDate>Sat, 15 Apr 2017 19:13:23 GMT</pubDate>
-		<lastBuildDate>Sat, 15 Apr 2017 19:13:23 GMT</lastBuildDate>
-		<item>
-			<title>New Release - 0.6.0</title>
-			<link>http://cake-contrib.github.io/Cake.ReSharperReports/blog/new-release-0.6.0</link>
-			<description>&lt;p&gt;Thanks to a contribution from @devlead, we are releasing 0.6.0 of Cake.ReSharperReports.  This includes the following:&lt;/p&gt;</description>
-			<author>gep13</author>
-			<guid>http://cake-contrib.github.io/Cake.ReSharperReports/blog/new-release-0.6.0</guid>
-			<pubDate>Wed, 01 Feb 2017 00:00:00 GMT</pubDate>
-		</item>
+		<copyright>2021</copyright>
+		<pubDate>Fri, 15 Jan 2021 07:35:32 GMT</pubDate>
+		<lastBuildDate>Fri, 15 Jan 2021 07:35:32 GMT</lastBuildDate>
 	</channel>
 </rss>
